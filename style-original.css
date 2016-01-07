@@ -1,0 +1,484 @@
+/*
+Theme Name: BID2WIN Auction Theme
+Author: Justin Gustafson
+Author URI: http://jtwgus.com/
+Description: A post modern, simple, responsive portfolio theme designed for BID2WIN Storage auctions.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  min-height: 100%;
+  background: #eeeeee; }
+
+body {
+  font-family: 'Signika', sans-serif;
+  height: 100%;
+  min-height: 100%; }
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background: #000; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  padding: 0;
+  margin: 0; }
+
+/* ==============
+    Header & Nav
+   ============== */
+header {
+  background-color: #000;
+  color: white; }
+
+.logo {
+  display: inline-block;
+  float: left;
+  padding: .2em 0 0 .5em;
+  color: #2BB24C; }
+
+nav a:hover {
+  color: #3DFF6D; }
+
+nav li {
+  font-weight: 600;
+  text-align: center; }
+
+/*! responsive-nav.js 1.0.39 by @viljamis */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none; }
+
+.nav-collapse li {
+  width: 100%;
+  display: block; }
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative; }
+  .js .nav-collapse.closed {
+    max-height: none; }
+  .nav-toggle {
+    display: none; } }
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left; }
+
+.nav-collapse li {
+  float: left;
+  width: 100%; }
+
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left; }
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em; }
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    display: inline-block;
+    float: left;
+    width: auto; }
+  .nav-collapse {
+    width: auto;
+    display: inline-block;
+    float: right; }
+  .nav-collapse ul {
+    display: inline-block;
+    width: auto;
+    float: right; }
+  .nav-collapse a {
+    width: auto;
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0; } }
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+@font-face {
+  font-family: "responsivenav";
+  src: url("icons/responsivenav.eot");
+  src: url("icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("icons/responsivenav.ttf") format("truetype"), url("icons/responsivenav.woff") format("woff"), url("icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right; }
+
+.nav-toggle:before {
+  color: #2BB24C;
+  /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 5px;
+  left: 0; }
+
+.nav-toggle.active::before {
+  font-size: 24px;
+  content: "x"; }
+
+/* ==============
+    Main Section
+   ============== */
+.main-container {
+  color: #fff; }
+  .main-container > p {
+    width: 100%;
+    margin: 1em auto 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.4em;
+    color: #000;
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    background: #2BB24C; }
+
+.main {
+  height: 15em;
+  background: #eee;
+  background-image: url("img/outdoor-units.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media screen and (min-width: 40em) {
+    .main {
+      height: 30em; } }
+
+.main-header1,
+.main-header2,
+.main-header3 {
+  text-align: center;
+  color: #000;
+  line-height: 1em;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #2BB24C; }
+
+.main-header1 {
+  padding-top: 6em;
+  font-size: 1.2em; }
+  @media screen and (min-width: 40em) {
+    .main-header1 {
+      padding-top: 6.5em;
+      font-size: 2.2em; } }
+
+.main-header2 {
+  font-size: 1.3em; }
+  @media screen and (min-width: 40em) {
+    .main-header2 {
+      font-size: 2.5em; } }
+
+.main-header3 {
+  font-size: 1.4em; }
+  @media screen and (min-width: 40em) {
+    .main-header3 {
+      font-size: 3em; } }
+
+/* ==============
+    Doors Section
+   ============== */
+.doors-container {
+  padding: .5em 0; }
+  @media screen and (min-width: 40em) {
+    .doors-container {
+      padding: 2em 0 0; } }
+  .doors-container ul {
+    margin: 0;
+    padding: 0 5%;
+    list-style-type: none; }
+    @media screen and (min-width: 40em) {
+      .doors-container ul {
+        padding: 0; } }
+    .doors-container ul li {
+      width: 100%;
+      height: 15em;
+      margin: 4em 0;
+      padding: 0;
+      text-align: center;
+      border-radius: 10px; }
+      .doors-container ul li a {
+        display: block;
+        height: 100%;
+        padding-top: 6em; }
+        .doors-container ul li a h1 {
+          padding: 0;
+          margin: 0;
+          color: #FFFFF0;
+          font-size: 1.5em;
+          font-weight: bold;
+          text-shadow: 0.1em 0.1em 0.1em #000; }
+      .doors-container ul li p {
+        color: #fff;
+        margin: 0;
+        padding: 0; }
+      @media screen and (min-width: 40em) {
+        .doors-container ul li {
+          display: inline-block;
+          width: 45%;
+          margin: 0 2% 3em 2%; } }
+      @media screen and (min-width: 60em) {
+        .doors-container ul li {
+          width: 22.5%;
+          margin: 0 1% 2em 1%; } }
+
+.doors-auction-bloc {
+  background: url("img/Doors/BlueDoor.jpg") right no-repeat;
+  background-size: cover; }
+
+.doors-calendar-bloc {
+  background: url("img/Doors/OrangeDoor2.jpg") right no-repeat;
+  background-size: cover; }
+
+.doors-about-bloc {
+  background: url("img/Doors/RedDoor.jpg") right no-repeat;
+  background-size: cover; }
+
+.doors-uhaul-bloc {
+  background: url("img/Doors/GreenDoor.jpg") right no-repeat;
+  background-size: cover; }
+
+/* ==============
+    FOOTER Section
+   ============== */
+footer {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: .7rem 0;
+  background: #000; }
+  footer ul {
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300; }
+    footer ul li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 1.5px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+.active > a {
+  color: #3DFF6D; }
+
+/* ==========================================================================
+   Auction Page
+   ========================================================================== */
+.auction-container {
+  width: 960px;
+  margin: 2rem auto;
+  background: #FFFFF0;
+  padding: 0 0 4rem; }
+  .auction-container h1 {
+    padding: 2rem 0 0 1rem;
+    color: #2BB24C;
+    font-size: 2rem; }
+
+.auctions {
+  margin-top: 3rem;
+  padding: 0 2rem 0 2rem; }
+
+.auction-listings {
+  width: 100%; }
+  .auction-listings th {
+    padding: 3px;
+    background: #2BB24C;
+    color: #FFFFF0;
+    text-align: left;
+    text-shadow: 2px 2px 2px black; }
+  .auction-listings td {
+    background: #DCDCDC;
+    padding: 6px; }
+
+.auction-headings {
+  font-size: 1.3rem;
+  border: 1px solid black;
+  margin-bottom: 1rem; }
+
+.spacer td {
+  height: 10px;
+  background: #FFFFF0; }
+
+.storage-image img {
+  width: 70px;
+  height: auto; }
+
+.company-name h2 {
+  margin: 0;
+  padding: 0; }
+
+.address,
+.city-state,
+.date,
+.time,
+.units,
+.details {
+  font-size: 1.2rem; }
+
+.units {
+  text-align: center; }
+
+/* ==========================================================================
+   Calendar Page
+   ========================================================================== */
+.calendar-container {
+  width: 960px;
+  margin: 2rem auto;
+  background: #FFFFF0;
+  padding: 0 0 4rem; }
+  .calendar-container h1 {
+    padding: 2rem 0 0 1rem;
+    color: #2BB24C;
+    font-size: 2rem; }
+
+/* ==========================================================================
+   Rules Page
+   ========================================================================== */
+.rules-container {
+  width: 960px;
+  margin: 2rem auto;
+  background: #FFFFF0;
+  padding: 0 0 4rem; }
+  .rules-container h1 {
+    padding: 2rem 0 0 1rem;
+    color: #2BB24C;
+    font-size: 2rem; }
+  .rules-container p {
+    padding: 0 2rem; }
+
+#rules {
+  padding: 2rem 2rem; }
+  #rules h2 {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2BB24C;
+    margin-bottom: 1.7rem; }
+  #rules article {
+    font-family: 'Signika', sans-serif;
+    margin-top: -1.7rem;
+    margin-bottom: 2rem; }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.about-container {
+  background: #DCDCDC;
+  overflow: auto;
+  width: 100%; }
+
+.mission-statement,
+.about {
+  width: 40%;
+  height: 600px;
+  float: left;
+  margin: 4.5%;
+  background-color: #FFFFF0;
+  border: 1px solid #2BB24C;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 1rem 2rem; }

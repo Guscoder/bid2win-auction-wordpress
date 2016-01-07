@@ -1,0 +1,987 @@
+/*
+Theme Name: Bid2win Auctions Theme
+Author: Justin Gustafson
+Author URI: http://jtwgus.com/
+Version: 1.0
+ */
+
+
+
+$white: #FFFFF0;
+$dkgreen: #2BB24C;
+$ltgreen: #3DFF6D;
+$red: #B2222B;
+$grey: #DCDCDC;
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html{
+  height: 100%;
+   @media screen and (max-width: 680px) {
+    height: auto;
+    background: #000;    
+  }
+}
+
+body {
+  height: 100%;
+    background: $grey;
+  font-family: 'Signika', sans-serif;
+     @media screen and (max-width: 680px) {
+    height: auto;
+    background: #000;
+  }
+}
+
+
+.site-container{
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ==============
+    Header & Nav
+   ============== */
+header{
+    background-color: #000 ;
+    color: white;
+}
+
+.logo{
+  display: inline-block;
+  float: left;
+  padding: .2em 0 0 .5em;
+  color: $dkgreen;
+  font-size: 2.5em;
+}
+
+nav a:hover{
+  color: $ltgreen; 
+}
+
+nav li{
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.twitter{
+  font-size: 1em !important; 
+}
+
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+.nav-collapse li {
+  float: left;
+  width: 100%;
+}
+
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    display: inline-block;
+    float: left;
+    width: auto;
+  }
+
+  .nav-collapse{
+    width: auto;
+    display: inline-block;
+    float: right;
+  }
+
+  .nav-collapse ul {
+    display: inline-block;
+    width: auto;
+    float: right;
+  }
+
+  .nav-collapse a {
+    width: auto;
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+  }
+
+}
+
+
+
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+
+}
+
+.nav-toggle:before {
+  color: $dkgreen; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 5px;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  font-size: 24px;
+  content:"x";
+}
+
+
+
+/* ==============
+    Main Section
+   ============== */
+
+.main-container{
+
+      color: #fff;
+      >p{
+        width: 100%;
+        margin: 1em auto 0;
+        padding: 5px 0;
+        text-align: center;
+        font-size: 1.4em;
+        color: #000;
+        border: 1px solid #fff;
+        border-left: none;
+        border-right: none;
+        background: $dkgreen;
+      }
+}
+
+.main {
+    height: 15em;
+    background: #eee;
+    background-image: url('img/outdoor-units.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   @media screen and (min-width: 40em) {
+      height: 30em;
+    }
+}
+
+.main-header1,
+.main-header2,
+.main-header3{
+  text-align: center;
+  color: #000;
+  line-height: 1em;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px $dkgreen;
+
+}
+
+.main-header1{
+  padding-top: 6em;
+  font-size: 1.2em;
+  @media screen and (min-width: 40em) {
+    padding-top: 6.5em;
+    font-size: 2.2em;
+  }
+}
+
+.main-header2{
+  font-size: 1.2em;
+  @media screen and (min-width: 40em) {
+    font-size: 2.5em;
+  }
+}
+
+.main-header3{
+  font-size: 1.5em;
+  @media screen and (min-width: 40em) {
+    font-size: 3em;
+  }
+}
+
+
+
+/* ==============
+    Doors Section
+   ============== */
+
+.doors-container {
+    padding: .5em 0;
+    background: #000;
+    @media screen and (min-width: 40em) {
+      padding: 2em 0 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0 5%;
+        list-style-type: none;
+        @media screen and (min-width: 40em) {
+              padding: 0;
+            }
+        li{
+            width: 100%;
+            height: 15em;
+            margin: 4em 0; 
+            padding: 0;           
+            text-align: center;
+            border-radius: 10px;
+            a{
+              display: block;
+              height: 100%;
+              padding-top: 6em;
+              text-decoration: none;
+              h1{
+                padding: 0;
+                margin: 0;
+                color: $white;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-shadow: 0.1em 0.1em 0.1em #000;
+              }           
+              h1:hover{
+                color: $dkgreen;
+              }   
+            }
+            p{
+              color: #fff;
+              margin: 0;
+              padding: 0;
+            }
+            @media screen and (min-width: 40em) {
+              display: inline-block;
+              width: 45%;
+              margin: 0 2% 3em 2%;
+            }
+            @media screen and (min-width: 60em) {
+              width: 22.5%;
+              margin: 0 1% 2em 1%;
+            }
+        }
+    }
+}
+
+
+
+.doors-nextauction-bloc{
+  background: url('img/Doors/BlueDoor.jpg') right no-repeat;
+  background-size: cover;    
+ 
+}
+
+.doors-auctions-bloc{
+  background: url('img/Doors/OrangeDoor2.jpg') right no-repeat;
+  background-size: cover; 
+ 
+}
+.doors-calendar-bloc{
+  background: url('img/Doors/RedDoor.jpg') right no-repeat;
+  background-size: cover; 
+  
+}
+.doors-rules-bloc{
+  background: url('img/Doors/GreenDoor.jpg') right no-repeat;
+  background-size: cover; 
+}
+
+
+/* ==============
+    FOOTER Section
+   ============== */
+
+footer{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: .7rem 0;
+  margin: 0;
+  background: #000;
+
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    color: #fff;          
+    font-size: 1rem;
+    font-weight: 300;
+    @media screen and (min-width: 40em) {
+        }
+    li{
+      display: inline-block;
+        margin: 0; 
+        padding: 0 1.5rem;    
+        letter-spacing: 1.5px;
+        @media screen and (max-width: 560px) {
+          display: block;
+          text-align: center;
+          font-size: 1.5rem
+        }
+      }
+    }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.active>a{
+  color: $ltgreen;
+}
+
+
+/* ==========================================================================
+   Auction Page
+   ========================================================================== */
+
+.auction-container{
+  width: 960px;
+  margin: 2rem auto;
+  background: $white;
+  padding: 0 0 4rem;
+  @media screen and (max-width: 1035px) {
+    width: 95%;
+  }
+  h1{
+    padding: 2rem 0 0 1rem;
+    color: $dkgreen;
+    font-size: 2.1em;
+    font-weight: 700;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.auctions{
+  margin: 0 auto;
+  padding: .5em;
+}
+
+
+.auction-listing{
+  width: 100%;
+  table-layout: fixed;
+  margin: 1em 0;
+  border: 2px solid $dkgreen;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0;
+  }
+  th{
+    padding: 3px;
+    background: $dkgreen;
+    color: $white;
+    text-shadow: 2px 2px 2px black;
+  }
+  td{
+    padding: 6px;
+  }
+  .time time{
+    display: none;
+  }
+
+  .auction-item{
+      background: $grey;
+      z-index: 10;
+  }
+}
+
+.auction-list-headings{
+  border: none;
+}
+
+.auction-headings{
+    font-size: 1.3rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+     @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+.auction-headings-company{
+  width: 30%;
+  text-align: center;
+}
+
+.storage-image{
+    width: 10%;
+    @media screen and (max-width: 768px) {
+    width: 25%;
+  }
+}
+
+
+.storage-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.company-name{
+  width: 20%;
+  h2 a{
+    color: $dkgreen;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  h2 a:hover{
+    text-decoration: none;
+    color: lighten( $dkgreen, 10%);
+  }
+}
+
+.auction-headings-location,
+.address{
+  width: 25%;
+  text-align: center;  
+}
+
+.auction-headings-city,
+.city-state{
+  width: 15%;
+  text-align: center;  
+}
+
+.auction-headings-date,
+.date{
+  width: 10%;
+  text-align: center;  
+}
+
+.auction-headings-time,
+.time{
+  width: 13%;
+  text-align: center;
+  p{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.auction-headings-units,
+.units{
+  width: 7%;
+  text-align: center;
+}
+
+.company-name,
+.address,
+.city-state,
+.date,
+.time,
+.time p,
+.units{
+  font-size: 1.1rem;
+/*  @media screen and (max-width: 939px) {
+    font-size: 1.2rem;
+  }*/
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 75%;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 559px) {
+  }
+  @media screen and (max-width: 440px) {
+    width: 100%;
+  }
+}
+
+.units:after{
+   @media screen and (max-width: 768px) {
+    content: "units";
+  }
+}
+
+.time:before{
+   @media screen and (max-width: 768px) {
+    content: "Time/Route Order:";
+  }
+}
+
+.company-name { 
+  h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 2rem;
+      @media screen and (max-width: 939px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 2.2rem;
+      }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   Calendar Page
+   ========================================================================== */
+
+.calendar-container{
+  width: 960px;
+  margin: 2rem auto;
+  background: $white;
+  padding: 0 0 4rem;
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
+  h1{
+    padding: 1em 0;
+    color: $dkgreen;
+    font-size: 2.3em;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.fc-event-time{
+  display: none !important;
+}
+
+.ui-tooltip-content{
+  display: none;
+}
+
+/* ==========================================================================
+   Rules Page
+   ========================================================================== */
+
+.rules-container{
+  width: 960px;
+  margin: 2rem auto 0;
+  background: $white;
+  padding: 0 0 4rem;
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
+  h1{
+    padding: 2rem 0 0 1rem;
+    color: $dkgreen;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+    p{
+    padding: 0 2rem; 
+    font-size: 1.3rem;
+  }
+}
+
+#rules{
+  padding: 2rem 2rem;
+
+  h2{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $dkgreen;
+    margin-bottom: 1.7rem;
+  }
+  article{
+    font-family: 'Signika', sans-serif;
+    margin-top: -1.7rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+.about-container{
+  background: $grey;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mission-statement,
+.about{
+  width: 40%;
+  height: 600px;
+  float: left;
+  margin: 4.5%;
+  background-color: $white;
+  border: 1px solid $dkgreen;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 2rem 2rem;
+  h1{
+    font-size: 2.3rem;
+    color: $dkgreen;
+    margin-bottom: 2rem; 
+  }
+  p{
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Single Event Page
+   ========================================================================== */
+
+.event-container{
+  background: $grey;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.event-info{
+    @media screen and (max-width: 650px) {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: none;
+  }  
+  ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    li{
+      padding: .5rem;
+      font-size: 1.3rem;
+      a{
+        color: $dkgreen;
+        text-decoration: none;
+      }
+      a:hover{
+        color: darken ($dkgreen, 20%) !important;
+      }
+   
+    }
+  }
+  h4{
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+#eo_venue_map-1{
+  height: 400px !important;
+  width: 100%;
+}
+
+.event-detail-list{
+  width: 90%;
+  height: auto;
+  margin: 4.5%;
+  background-color: $white;
+  border: 1px solid $dkgreen;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 2rem 2rem;
+  h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: $dkgreen;
+    margin-bottom: 2rem; 
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+  }
+}
+
+.event-list-rules-link{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 650px){
+  body.single-event .eo-event-meta{
+    width: 50% !important;
+    float: left !important;
+  }
+  body.single-event .eo-event-venue-map{
+    width: 50% !important;
+    float:right !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   Category Page
+   ========================================================================== */
+
+.category-container{
+  background: $grey;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  h2 a{
+    color: $dkgreen !important;
+  }
+
+  h2 a:hover{
+    text-decoration: none;
+  }
+
+  img{
+    padding-left: 1rem;
+    @media screen and (max-width: 480px){
+    display: block !important;
+    float: none !important;
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 0;
+    }  
+  }
+  article{
+    border: 2px $dkgreen solid;
+    margin: 1rem 0;
+  }
+}
+
+.category-info{
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+  .eo-event-meta{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    li{
+      padding: .5rem;
+      font-size: 1.3rem;
+      color: #000;
+      a{
+        color: $dkgreen;
+        text-decoration: none;
+      }
+      a:hover{
+        color: darken ($dkgreen, 20%) !important;
+      }
+    }
+  @media screen and (max-width: 480px){
+    display: block;
+    clear: both;
+  }  
+}
+  h4{
+    font-weight: 600;
+  }
+}
+
+.category-detail-list{
+  width: 90%;
+  height: auto;
+  margin: 4.5%;
+  background-color: $white;
+  border: 1px solid $dkgreen;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 2rem 2rem;
+  header{
+    background: $white;
+  }
+  h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: $dkgreen;
+    margin-bottom: 2rem; 
+  }
+  .category-info{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+  }
+}
+
+.category-date {
+font-weight: 700;
+}
+
+.category-route-order{
+  margin-top: .8rem;
+  font-weight: 700;
+}
