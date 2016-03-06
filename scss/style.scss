@@ -101,6 +101,7 @@ nav li{
   display: block;
 }
 
+
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -706,11 +707,15 @@ footer{
 }
 
 .fc-event-time{
-  display: none !important;
+  display: none !important; 
 }
 
 .ui-tooltip-content{
   display: none;
+}
+
+.qtip-content{
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -787,12 +792,26 @@ footer{
   p{
     font-size: 1.3rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 860px) {
     width: 90%;
     height: auto;
     display: block;
     float: none;
   }
+}
+
+.about{
+  p {
+    font-size: 1.1rem;
+  a{
+    @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: .8rem;
+  }
+ }
+}
 }
 
 /* ==========================================================================

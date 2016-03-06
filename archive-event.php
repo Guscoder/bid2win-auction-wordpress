@@ -111,7 +111,7 @@ get_header(); ?>
 																	$format = 'F d, Y';
 																	$microformat = 'Y-m-d';
 																}else{
-																	$format = 'l, F d, Y ';
+																	$format = 'l, m-d-Y ';
 																	$microformat = 'c';
 																}?>
 																<time itemprop="startDate" datetime="<?php eo_the_start($microformat); ?>"><?php eo_the_start($format); ?></time>

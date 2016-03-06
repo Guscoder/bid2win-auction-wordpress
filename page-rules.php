@@ -15,7 +15,7 @@
                 <h1>Auction Location Rules of Participation</h1>
                     
                 <div class="accordion" id="rules">
-                    <h2>Uhaul Storage Rules</h2>
+                    <h2>U-Haul Storage Rules</h2>
                     <article>
                         <ul>
                             <li>No smoking on any property.</li>
@@ -45,7 +45,7 @@
                         </ul>
                     </article>
 
-                    <h2>Life Storage Rules</h2>
+                    <h2>LifeStorage Rules</h2>
                     <article>
                         <ul>
                             <li>Register in office at desk to attend the auction.</li>

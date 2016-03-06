@@ -5,6 +5,19 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
 
+Jigsaw::add_column('roundtable', 'Stories', function($post_id){
+    $roundtable = new ClientCustomPostClass($post_id);
+    foreach($roundtable->get_roundtable_children() as $child){
+        echo '<a href="'.$child->edit_link().'">'.$child->post_title.'</a></li>';
+    }
+});
+
+Jigsaw::add_column('event', 'Units', function($post_id){
+    $page = get_post($post_id);
+    echo the_field('#_of_units');
+}, 3);
+
+
 
 function register_theme_menus(){
 

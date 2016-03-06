@@ -15,8 +15,13 @@
 
                 <div class="about">
                     <h1>About BID2WIN LLC</h1>
-                    <p>We provide professional auction services for storage facilities in Chicagoland, Eastern Wisconsin and    Northern Indiana with over a decade of specialized experience. We enjoy providing a professional service for storage facilites and making the storage auction process as stress free as possible.
+                    <p>We are a family owned business with over a decade of specialized experience providing professional services for storage facilities.  Our goal is to make the storage auction process as efficient and stress-free as possible.
+We currently provide services in Chicagoland, Eastern Wisconsin and Northern Indiana.
+Our office is located in Rockford, Michigan.
                     </p>
+                    <p>Contact Us:</p>
+                    <p>Email: <a href="mailto:bid2winstorageauctions@gmail.com">bid2winstorageauctions@gmail.com</a> </p>
+                    <p>616-633-9520</p>
                    
                 </div>
                 
