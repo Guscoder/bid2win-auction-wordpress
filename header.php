@@ -16,9 +16,13 @@
         <div class="site-container">
 
             <section class="header-container">
+
                 <header class="clearfix">
-                   <a href="<?php bloginfo('url'); ?>"><h1 class="logo">Bid2Win</h1></a>
-									<nav class="nav-collapse">
+                  
+                    <a class="header-title" href="<?php bloginfo('url'); ?>"><h1 class="header-logo">Bid2Win</h1></a>
+                  
+<!--                    <a href="<?php bloginfo('url'); ?>"><h1 class="logo">Bid2Win</h1><img class="header-logo" src="<?php bloginfo('template_directory'); ?>/img/logo1.png" alt="logo" width="80" height="35" /></a>
+ -->									<nav class="nav-collapse">
 
 											
 											<?php

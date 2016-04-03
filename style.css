@@ -53,30 +53,42 @@ header {
   background-color: #000;
   color: white; }
 
-/* line 67, scss/style.scss */
-.logo {
+/* line 68, scss/style.scss */
+.header-title {
+  color: #fff;
+  text-decoration: none;
   display: inline-block;
-  float: left;
-  padding: .2em 0 0 .5em;
-  color: #2bb24c;
-  font-size: 2.5em; }
+  height: 50px; }
 
 /* line 75, scss/style.scss */
+.header-logo {
+  margin-top: .2em;
+  margin-left: .6em;
+  height: 50px;
+  width: 90px;
+  float: left;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("img/logo3.png");
+  background-repeat: no-repeat; }
+
+/* line 88, scss/style.scss */
 nav a:hover {
   color: #3dff6d; }
 
-/* line 79, scss/style.scss */
+/* line 92, scss/style.scss */
 nav li {
   font-size: 1.2em;
   font-weight: 600;
   text-align: center; }
 
-/* line 85, scss/style.scss */
+/* line 98, scss/style.scss */
 .icon-twitter {
   font-size: 1.2em !important; }
 
 /* responsive-nav.js 1.0.39 by @viljamis */
-/* line 91, scss/style.scss */
+/* line 104, scss/style.scss */
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -84,12 +96,12 @@ nav li {
   display: block;
   list-style: none; }
 
-/* line 99, scss/style.scss */
+/* line 112, scss/style.scss */
 .nav-collapse li {
   width: 100%;
   display: block; }
 
-/* line 105, scss/style.scss */
+/* line 118, scss/style.scss */
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -98,11 +110,11 @@ nav li {
   overflow: hidden;
   zoom: 1; }
 
-/* line 114, scss/style.scss */
+/* line 127, scss/style.scss */
 .nav-collapse.opened {
   max-height: 9999px; }
 
-/* line 118, scss/style.scss */
+/* line 131, scss/style.scss */
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -113,48 +125,48 @@ nav li {
   user-select: none; }
 
 @media screen and (min-width: 40em) {
-  /* line 129, scss/style.scss */
+  /* line 142, scss/style.scss */
   .js .nav-collapse {
     position: relative; }
 
-  /* line 132, scss/style.scss */
+  /* line 145, scss/style.scss */
   .js .nav-collapse.closed {
     max-height: none; }
 
-  /* line 135, scss/style.scss */
+  /* line 148, scss/style.scss */
   .nav-toggle {
     display: none; } }
 /* ------------------------------------------
   NAVIGATION STYLES
   (+ responsive-nav.css file is loaded in the <head>)
 --------------------------------------------- */
-/* line 145, scss/style.scss */
+/* line 158, scss/style.scss */
 .fixed {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0; }
 
-/* line 153, scss/style.scss */
+/* line 166, scss/style.scss */
 .nav-collapse,
 .nav-collapse * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 160, scss/style.scss */
+/* line 173, scss/style.scss */
 .nav-collapse,
 .nav-collapse ul {
   list-style: none;
   width: 100%;
   float: left; }
 
-/* line 166, scss/style.scss */
+/* line 179, scss/style.scss */
 .nav-collapse li {
   float: left;
   width: 100%; }
 
-/* line 171, scss/style.scss */
+/* line 184, scss/style.scss */
 .nav-collapse a {
   color: #fff;
   text-decoration: none;
@@ -164,31 +176,31 @@ nav li {
   padding: 0.7em 1em;
   float: left; }
 
-/* line 181, scss/style.scss */
+/* line 194, scss/style.scss */
 .nav-collapse ul ul a {
   background: #ca3716;
   padding-left: 2em; }
 
 @media screen and (min-width: 40em) {
-  /* line 187, scss/style.scss */
+  /* line 200, scss/style.scss */
   .nav-collapse li {
     display: inline-block;
     float: left;
     width: auto; }
 
-  /* line 193, scss/style.scss */
+  /* line 206, scss/style.scss */
   .nav-collapse {
     width: auto;
     display: inline-block;
     float: right; }
 
-  /* line 199, scss/style.scss */
+  /* line 212, scss/style.scss */
   .nav-collapse ul {
     display: inline-block;
     width: auto;
     float: right; }
 
-  /* line 205, scss/style.scss */
+  /* line 218, scss/style.scss */
   .nav-collapse a {
     width: auto;
     margin: 0;
@@ -206,7 +218,7 @@ nav li {
   font-weight: normal;
   font-style: normal; }
 
-/* line 234, scss/style.scss */
+/* line 247, scss/style.scss */
 .nav-toggle {
   position: fixed;
   -webkit-font-smoothing: antialiased;
@@ -224,7 +236,7 @@ nav li {
   height: 55px;
   float: right; }
 
-/* line 253, scss/style.scss */
+/* line 266, scss/style.scss */
 .nav-toggle:before {
   color: #2bb24c;
   /* Edit this to change the icon color */
@@ -244,7 +256,7 @@ nav li {
   top: 5px;
   left: 0; }
 
-/* line 272, scss/style.scss */
+/* line 285, scss/style.scss */
 .nav-toggle.active::before {
   font-size: 24px;
   content: "x"; }
@@ -252,10 +264,10 @@ nav li {
 /* ==============
     Main Section
    ============== */
-/* line 283, scss/style.scss */
+/* line 296, scss/style.scss */
 .main-container {
   color: #fff; }
-  /* line 286, scss/style.scss */
+  /* line 299, scss/style.scss */
   .main-container > p {
     width: 100%;
     margin: 1em auto 0;
@@ -268,7 +280,7 @@ nav li {
     border-right: none;
     background: #2bb24c; }
 
-/* line 300, scss/style.scss */
+/* line 313, scss/style.scss */
 .main {
   height: 15em;
   background: #eee;
@@ -277,11 +289,11 @@ nav li {
   background-repeat: no-repeat;
   background-position: center; }
   @media screen and (min-width: 40em) {
-    /* line 300, scss/style.scss */
+    /* line 313, scss/style.scss */
     .main {
       height: 30em; } }
 
-/* line 314, scss/style.scss */
+/* line 327, scss/style.scss */
 .main-header1,
 .main-header2,
 .main-header3 {
@@ -291,53 +303,53 @@ nav li {
   font-weight: 600;
   text-shadow: 2px 2px 2px #2bb24c; }
 
-/* line 323, scss/style.scss */
+/* line 336, scss/style.scss */
 .main-header1 {
   padding-top: 6em;
   font-size: 1.2em; }
   @media screen and (min-width: 40em) {
-    /* line 323, scss/style.scss */
+    /* line 336, scss/style.scss */
     .main-header1 {
       padding-top: 6.5em;
       font-size: 2.2em; } }
 
-/* line 332, scss/style.scss */
+/* line 345, scss/style.scss */
 .main-header2 {
   font-size: 1.2em; }
   @media screen and (min-width: 40em) {
-    /* line 332, scss/style.scss */
+    /* line 345, scss/style.scss */
     .main-header2 {
       font-size: 2.5em; } }
 
-/* line 339, scss/style.scss */
+/* line 352, scss/style.scss */
 .main-header3 {
   font-size: 1.5em; }
   @media screen and (min-width: 40em) {
-    /* line 339, scss/style.scss */
+    /* line 352, scss/style.scss */
     .main-header3 {
       font-size: 3em; } }
 
 /* ==============
     Doors Section
    ============== */
-/* line 352, scss/style.scss */
+/* line 365, scss/style.scss */
 .doors-container {
   padding: .5em 0;
   background: #000; }
   @media screen and (min-width: 40em) {
-    /* line 352, scss/style.scss */
+    /* line 365, scss/style.scss */
     .doors-container {
       padding: 2em 0 0; } }
-  /* line 358, scss/style.scss */
+  /* line 371, scss/style.scss */
   .doors-container ul {
     margin: 0;
     padding: 0 5%;
     list-style-type: none; }
     @media screen and (min-width: 40em) {
-      /* line 358, scss/style.scss */
+      /* line 371, scss/style.scss */
       .doors-container ul {
         padding: 0; } }
-    /* line 365, scss/style.scss */
+    /* line 378, scss/style.scss */
     .doors-container ul li {
       width: 100%;
       height: 15em;
@@ -345,13 +357,13 @@ nav li {
       padding: 0;
       text-align: center;
       border-radius: 10px; }
-      /* line 372, scss/style.scss */
+      /* line 385, scss/style.scss */
       .doors-container ul li a {
         display: block;
         height: 100%;
         padding-top: 6em;
         text-decoration: none; }
-        /* line 377, scss/style.scss */
+        /* line 390, scss/style.scss */
         .doors-container ul li a h1 {
           padding: 0;
           margin: 0;
@@ -359,42 +371,42 @@ nav li {
           font-size: 1.5em;
           font-weight: bold;
           text-shadow: 0.1em 0.1em 0.1em #000; }
-        /* line 385, scss/style.scss */
+        /* line 398, scss/style.scss */
         .doors-container ul li a h1:hover {
           color: #2bb24c; }
-      /* line 389, scss/style.scss */
+      /* line 402, scss/style.scss */
       .doors-container ul li p {
         color: #fff;
         margin: 0;
         padding: 0; }
       @media screen and (min-width: 40em) {
-        /* line 365, scss/style.scss */
+        /* line 378, scss/style.scss */
         .doors-container ul li {
           display: inline-block;
           width: 45%;
           margin: 0 2% 3em 2%; } }
       @media screen and (min-width: 60em) {
-        /* line 365, scss/style.scss */
+        /* line 378, scss/style.scss */
         .doors-container ul li {
           width: 22.5%;
           margin: 0 1% 2em 1%; } }
 
-/* line 409, scss/style.scss */
+/* line 422, scss/style.scss */
 .doors-nextauction-bloc {
   background: url("img/Doors/BlueDoor.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 415, scss/style.scss */
+/* line 428, scss/style.scss */
 .doors-auctions-bloc {
   background: url("img/Doors/OrangeDoor2.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 420, scss/style.scss */
+/* line 433, scss/style.scss */
 .doors-calendar-bloc {
   background: url("img/Doors/RedDoor.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 425, scss/style.scss */
+/* line 438, scss/style.scss */
 .doors-rules-bloc {
   background: url("img/Doors/GreenDoor.jpg") right no-repeat;
   background-size: cover; }
@@ -402,7 +414,7 @@ nav li {
 /* ==============
     FOOTER Section
    ============== */
-/* line 435, scss/style.scss */
+/* line 448, scss/style.scss */
 footer {
   width: 100%;
   max-width: 1200px;
@@ -410,7 +422,7 @@ footer {
   padding: .7rem 0;
   margin: 0;
   background: #000; }
-  /* line 443, scss/style.scss */
+  /* line 456, scss/style.scss */
   footer ul {
     padding: 0;
     margin: 0 auto;
@@ -419,14 +431,14 @@ footer {
     color: #fff;
     font-size: 1rem;
     font-weight: 300; }
-    /* line 453, scss/style.scss */
+    /* line 466, scss/style.scss */
     footer ul li {
       display: inline-block;
       margin: 0;
       padding: 0 1.5rem;
       letter-spacing: 1.5px; }
       @media screen and (max-width: 560px) {
-        /* line 453, scss/style.scss */
+        /* line 466, scss/style.scss */
         footer ul li {
           display: block;
           text-align: center;
@@ -435,166 +447,166 @@ footer {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 474, scss/style.scss */
+/* line 487, scss/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 479, scss/style.scss */
+/* line 492, scss/style.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 483, scss/style.scss */
+/* line 496, scss/style.scss */
 .clearfix {
   *zoom: 1; }
 
-/* line 487, scss/style.scss */
+/* line 500, scss/style.scss */
 .active > a {
   color: #3dff6d; }
 
 /* ==========================================================================
    Auction Page
    ========================================================================== */
-/* line 496, scss/style.scss */
+/* line 509, scss/style.scss */
 .auction-container {
   width: 960px;
   margin: 2rem auto;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1035px) {
-    /* line 496, scss/style.scss */
+    /* line 509, scss/style.scss */
     .auction-container {
       width: 95%; } }
-  /* line 504, scss/style.scss */
+  /* line 517, scss/style.scss */
   .auction-container h1 {
     padding: 2rem 0 0 1rem;
     color: #2bb24c;
     font-size: 2.1em;
     font-weight: 700;
     text-align: center; }
-  /* line 511, scss/style.scss */
+  /* line 524, scss/style.scss */
   .auction-container p {
     text-align: center;
     font-size: 1rem; }
 
-/* line 517, scss/style.scss */
+/* line 530, scss/style.scss */
 .auctions {
   margin: 0 auto;
   padding: .5em; }
 
-/* line 523, scss/style.scss */
+/* line 536, scss/style.scss */
 .auction-listing {
   width: 100%;
   table-layout: fixed;
   margin: 1em 0;
   border: 2px solid #2bb24c; }
   @media screen and (max-width: 768px) {
-    /* line 523, scss/style.scss */
+    /* line 536, scss/style.scss */
     .auction-listing {
       width: 90%;
       text-align: center;
       margin: 1em auto;
       padding: 0; } }
-  /* line 534, scss/style.scss */
+  /* line 547, scss/style.scss */
   .auction-listing th {
     padding: 3px;
     background: #2bb24c;
     color: ivory;
     text-shadow: 2px 2px 2px black; }
-  /* line 540, scss/style.scss */
+  /* line 553, scss/style.scss */
   .auction-listing td {
     padding: 6px; }
-  /* line 543, scss/style.scss */
+  /* line 556, scss/style.scss */
   .auction-listing .time time {
     display: none; }
-  /* line 547, scss/style.scss */
+  /* line 560, scss/style.scss */
   .auction-listing .auction-item {
     background: gainsboro;
     z-index: 10; }
 
-/* line 553, scss/style.scss */
+/* line 566, scss/style.scss */
 .auction-list-headings {
   border: none; }
 
-/* line 557, scss/style.scss */
+/* line 570, scss/style.scss */
 .auction-headings {
   font-size: 1.3rem;
   border: 1px solid black;
   margin-bottom: 1rem; }
   @media screen and (max-width: 768px) {
-    /* line 557, scss/style.scss */
+    /* line 570, scss/style.scss */
     .auction-headings {
       display: none; } }
 
-/* line 567, scss/style.scss */
+/* line 580, scss/style.scss */
 .auction-headings-company {
   width: 30%;
   text-align: center; }
 
-/* line 572, scss/style.scss */
+/* line 585, scss/style.scss */
 .storage-image {
   width: 10%; }
   @media screen and (max-width: 768px) {
-    /* line 572, scss/style.scss */
+    /* line 585, scss/style.scss */
     .storage-image {
       width: 25%; } }
 
-/* line 580, scss/style.scss */
+/* line 593, scss/style.scss */
 .storage-image img {
   max-width: 100%;
   height: auto; }
 
-/* line 586, scss/style.scss */
+/* line 599, scss/style.scss */
 .company-name {
   width: 20%; }
-  /* line 588, scss/style.scss */
+  /* line 601, scss/style.scss */
   .company-name h2 a {
     color: #2bb24c;
     text-decoration: none;
     font-size: 1.5rem; }
-  /* line 593, scss/style.scss */
+  /* line 606, scss/style.scss */
   .company-name h2 a:hover {
     text-decoration: none;
     color: #3fd163; }
 
-/* line 600, scss/style.scss */
+/* line 613, scss/style.scss */
 .auction-headings-location,
 .address {
   width: 25%;
   text-align: center; }
 
-/* line 606, scss/style.scss */
+/* line 619, scss/style.scss */
 .auction-headings-city,
 .city-state {
   width: 15%;
   text-align: center; }
 
-/* line 612, scss/style.scss */
+/* line 625, scss/style.scss */
 .auction-headings-date,
 .date {
   width: 10%;
   text-align: center; }
 
-/* line 618, scss/style.scss */
+/* line 631, scss/style.scss */
 .auction-headings-time,
 .time {
   width: 13%;
   text-align: center; }
-  /* line 621, scss/style.scss */
+  /* line 634, scss/style.scss */
   .auction-headings-time p,
   .time p {
     text-align: center;
     margin: 0 auto;
     padding: 0; }
 
-/* line 629, scss/style.scss */
+/* line 642, scss/style.scss */
 .auction-headings-units,
 .units {
   width: 7%;
   text-align: center; }
 
-/* line 640, scss/style.scss */
+/* line 653, scss/style.scss */
 .company-name,
 .address,
 .city-state,
@@ -607,7 +619,7 @@ footer {
       font-size: 1.2rem;
     }*/ }
   @media screen and (max-width: 768px) {
-    /* line 640, scss/style.scss */
+    /* line 653, scss/style.scss */
     .company-name,
     .address,
     .city-state,
@@ -619,7 +631,7 @@ footer {
       width: 75%;
       font-size: 1.5rem; } }
   @media screen and (max-width: 440px) {
-    /* line 640, scss/style.scss */
+    /* line 653, scss/style.scss */
     .company-name,
     .address,
     .city-state,
@@ -630,44 +642,44 @@ footer {
       width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  /* line 657, scss/style.scss */
+  /* line 670, scss/style.scss */
   .units:after {
     content: "units"; } }
 
 @media screen and (max-width: 768px) {
-  /* line 663, scss/style.scss */
+  /* line 676, scss/style.scss */
   .time:before {
     content: "Time/Route Order:"; } }
 
-/* line 670, scss/style.scss */
+/* line 683, scss/style.scss */
 .company-name h2 {
   margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 2rem; }
   @media screen and (max-width: 939px) {
-    /* line 670, scss/style.scss */
+    /* line 683, scss/style.scss */
     .company-name h2 {
       font-size: 1.3rem; } }
   @media screen and (max-width: 768px) {
-    /* line 670, scss/style.scss */
+    /* line 683, scss/style.scss */
     .company-name h2 {
       font-size: 2.2rem; } }
 
 /* ==========================================================================
    Calendar Page
    ========================================================================== */
-/* line 692, scss/style.scss */
+/* line 705, scss/style.scss */
 .calendar-container {
   width: 960px;
   margin: 2rem auto;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1000px) {
-    /* line 692, scss/style.scss */
+    /* line 705, scss/style.scss */
     .calendar-container {
       width: 90%; } }
-  /* line 700, scss/style.scss */
+  /* line 713, scss/style.scss */
   .calendar-container h1 {
     padding: 1em 0;
     color: #2bb24c;
@@ -675,53 +687,53 @@ footer {
     font-weight: 700;
     text-align: center; }
 
-/* line 709, scss/style.scss */
+/* line 722, scss/style.scss */
 .fc-event-time, .fc-time {
   display: none !important; }
 
-/* line 713, scss/style.scss */
+/* line 726, scss/style.scss */
 .ui-tooltip-content {
   display: none; }
 
-/* line 717, scss/style.scss */
+/* line 730, scss/style.scss */
 .qtip-content {
   display: none !important; }
 
 /* ==========================================================================
    Rules Page
    ========================================================================== */
-/* line 725, scss/style.scss */
+/* line 738, scss/style.scss */
 .rules-container {
   width: 960px;
   margin: 2rem auto 0;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1000px) {
-    /* line 725, scss/style.scss */
+    /* line 738, scss/style.scss */
     .rules-container {
       width: 90%; } }
-  /* line 733, scss/style.scss */
+  /* line 746, scss/style.scss */
   .rules-container h1 {
     padding: 2rem 0 0 1rem;
     color: #2bb24c;
     font-size: 2.2rem;
     font-weight: 700; }
-  /* line 739, scss/style.scss */
+  /* line 752, scss/style.scss */
   .rules-container p {
     padding: 0 2rem;
     font-size: 1.3rem; }
 
-/* line 745, scss/style.scss */
+/* line 758, scss/style.scss */
 #rules {
   padding: 2rem 2rem; }
-  /* line 748, scss/style.scss */
+  /* line 761, scss/style.scss */
   #rules h2 {
     font-family: 'Signika', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #2bb24c;
     margin-bottom: 1.7rem; }
-  /* line 755, scss/style.scss */
+  /* line 768, scss/style.scss */
   #rules article {
     font-family: 'Signika', sans-serif;
     margin-top: -1.7rem;
@@ -731,14 +743,14 @@ footer {
 /* ==========================================================================
    About Page
    ========================================================================== */
-/* line 768, scss/style.scss */
+/* line 781, scss/style.scss */
 .about-container {
   background: gainsboro;
   overflow: auto;
   width: 90%;
   margin: 0 auto; }
 
-/* line 776, scss/style.scss */
+/* line 789, scss/style.scss */
 .mission-statement,
 .about {
   width: 40%;
@@ -751,18 +763,18 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 787, scss/style.scss */
+  /* line 800, scss/style.scss */
   .mission-statement h1,
   .about h1 {
     font-size: 2.3rem;
     color: #2bb24c;
     margin-bottom: 2rem; }
-  /* line 792, scss/style.scss */
+  /* line 805, scss/style.scss */
   .mission-statement p,
   .about p {
     font-size: 1.3rem; }
   @media screen and (max-width: 860px) {
-    /* line 776, scss/style.scss */
+    /* line 789, scss/style.scss */
     .mission-statement,
     .about {
       width: 90%;
@@ -770,22 +782,22 @@ footer {
       display: block;
       float: none; } }
 
-/* line 804, scss/style.scss */
+/* line 817, scss/style.scss */
 .about p {
   font-size: 1.1rem; }
   @media screen and (max-width: 1100px) {
-    /* line 806, scss/style.scss */
+    /* line 819, scss/style.scss */
     .about p a {
       font-size: 1rem; } }
   @media screen and (max-width: 600px) {
-    /* line 806, scss/style.scss */
+    /* line 819, scss/style.scss */
     .about p a {
       font-size: .8rem; } }
 
 /* ==========================================================================
    Single Event Page
    ========================================================================== */
-/* line 821, scss/style.scss */
+/* line 834, scss/style.scss */
 .event-container {
   background: gainsboro;
   overflow: auto;
@@ -793,39 +805,39 @@ footer {
   margin: 0 auto; }
 
 @media screen and (max-width: 650px) {
-  /* line 828, scss/style.scss */
+  /* line 841, scss/style.scss */
   .event-info {
     width: 100%;
     height: auto;
     display: block;
     float: none; } }
-/* line 835, scss/style.scss */
+/* line 848, scss/style.scss */
 .event-info ul {
   margin: 0 auto;
   padding: 0;
   list-style: none; }
-  /* line 839, scss/style.scss */
+  /* line 852, scss/style.scss */
   .event-info ul li {
     padding: .5rem;
     font-size: 1.3rem; }
-    /* line 842, scss/style.scss */
+    /* line 855, scss/style.scss */
     .event-info ul li a {
       color: #2bb24c;
       text-decoration: none; }
-    /* line 846, scss/style.scss */
+    /* line 859, scss/style.scss */
     .event-info ul li a:hover {
       color: darken #2bb24c, 20% !important; }
-/* line 852, scss/style.scss */
+/* line 865, scss/style.scss */
 .event-info h4 {
   font-weight: 600;
   font-size: 1.3rem; }
 
-/* line 858, scss/style.scss */
+/* line 871, scss/style.scss */
 #eo_venue_map-1 {
   height: 400px !important;
   width: 100%; }
 
-/* line 863, scss/style.scss */
+/* line 876, scss/style.scss */
 .event-detail-list {
   width: 90%;
   height: auto;
@@ -836,97 +848,97 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 873, scss/style.scss */
+  /* line 886, scss/style.scss */
   .event-detail-list h1 {
     font-size: 2.3rem;
     font-weight: 700;
     color: #2bb24c;
     margin-bottom: 2rem; }
   @media screen and (max-width: 768px) {
-    /* line 863, scss/style.scss */
+    /* line 876, scss/style.scss */
     .event-detail-list {
       width: 90%;
       height: auto;
       display: block;
       float: none; } }
 
-/* line 888, scss/style.scss */
+/* line 901, scss/style.scss */
 .event-list-rules-link {
   margin-bottom: 2rem; }
 
 @media (min-width: 650px) {
-  /* line 893, scss/style.scss */
+  /* line 906, scss/style.scss */
   body.single-event .eo-event-meta {
     width: 50% !important;
     float: left !important; }
 
-  /* line 897, scss/style.scss */
+  /* line 910, scss/style.scss */
   body.single-event .eo-event-venue-map {
     width: 50% !important;
     float: right !important; } }
 /* ==========================================================================
    Category Page
    ========================================================================== */
-/* line 909, scss/style.scss */
+/* line 922, scss/style.scss */
 .category-container {
   background: gainsboro;
   overflow: auto;
   width: 90%;
   margin: 0 auto; }
-  /* line 914, scss/style.scss */
+  /* line 927, scss/style.scss */
   .category-container h2 a {
     color: #2bb24c !important; }
-  /* line 918, scss/style.scss */
+  /* line 931, scss/style.scss */
   .category-container h2 a:hover {
     text-decoration: none; }
-  /* line 922, scss/style.scss */
+  /* line 935, scss/style.scss */
   .category-container img {
     padding-left: 1rem; }
     @media screen and (max-width: 480px) {
-      /* line 922, scss/style.scss */
+      /* line 935, scss/style.scss */
       .category-container img {
         display: block !important;
         float: none !important;
         text-align: center;
         margin: 0 auto !important;
         padding: 0; } }
-  /* line 932, scss/style.scss */
+  /* line 945, scss/style.scss */
   .category-container article {
     border: 2px #2bb24c solid;
     margin: 1rem 0; }
 
-/* line 938, scss/style.scss */
+/* line 951, scss/style.scss */
 .category-info {
   color: #000;
   font-size: 1.3rem;
   font-weight: 600; }
-  /* line 942, scss/style.scss */
+  /* line 955, scss/style.scss */
   .category-info .eo-event-meta {
     margin: 0 auto;
     padding: 0;
     list-style: none; }
-    /* line 946, scss/style.scss */
+    /* line 959, scss/style.scss */
     .category-info .eo-event-meta li {
       padding: .5rem;
       font-size: 1.3rem;
       color: #000; }
-      /* line 950, scss/style.scss */
+      /* line 963, scss/style.scss */
       .category-info .eo-event-meta li a {
         color: #2bb24c;
         text-decoration: none; }
-      /* line 954, scss/style.scss */
+      /* line 967, scss/style.scss */
       .category-info .eo-event-meta li a:hover {
         color: darken #2bb24c, 20% !important; }
     @media screen and (max-width: 480px) {
-      /* line 942, scss/style.scss */
+      /* line 955, scss/style.scss */
       .category-info .eo-event-meta {
         display: block;
         clear: both; } }
-  /* line 963, scss/style.scss */
+  /* line 976, scss/style.scss */
   .category-info h4 {
     font-weight: 600; }
 
-/* line 968, scss/style.scss */
+/* line 981, scss/style.scss */
 .category-detail-list {
   width: 90%;
   height: auto;
@@ -937,31 +949,31 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 978, scss/style.scss */
+  /* line 991, scss/style.scss */
   .category-detail-list header {
     background: ivory; }
-  /* line 981, scss/style.scss */
+  /* line 994, scss/style.scss */
   .category-detail-list h1 {
     font-size: 2.3rem;
     font-weight: 700;
     color: #2bb24c;
     margin-bottom: 2rem; }
-  /* line 987, scss/style.scss */
+  /* line 1000, scss/style.scss */
   .category-detail-list .category-info {
     text-align: center; }
   @media screen and (max-width: 768px) {
-    /* line 968, scss/style.scss */
+    /* line 981, scss/style.scss */
     .category-detail-list {
       width: 90%;
       height: auto;
       display: block;
       float: none; } }
 
-/* line 999, scss/style.scss */
+/* line 1012, scss/style.scss */
 .category-date {
   font-weight: 700; }
 
-/* line 1003, scss/style.scss */
+/* line 1016, scss/style.scss */
 .category-route-order {
   margin-top: .8rem;
   font-weight: 700; }

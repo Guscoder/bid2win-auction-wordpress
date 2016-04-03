@@ -13,7 +13,7 @@
                     <ul class="doors-list">
                         <li class="doors-nextauction-bloc">
                             <a href="">
-                                <h1>Next Auction:</h1>
+                                <h1>Next Auction:</h1>   
                             </a>
                         </li>
                         <li class="doors-auctions-bloc">
@@ -33,6 +33,7 @@
                             </a>
                         </li>
                     </ul>
+
             </section><!-- #doors-container -->
 
 <?php get_footer(); ?>

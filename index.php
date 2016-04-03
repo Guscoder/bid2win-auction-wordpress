@@ -14,26 +14,6 @@
                         <li class="doors-auction-bloc">
                             <a href="auctions.html">
                                 <h1>Next Auction:</h1>
-                                <?php
-
-    session_start();
-
-    require_once("twitteroauth-master/autoload.php");
-
-    use Abraham\TwitterOAuth\TwitterOAuth;
-
-    $apikey="6gGhuHdh8bNk56Hn7FNXWeYOI";
-    $apisecret="ufIJw87Sx6nrhJ31gFCzFoPNqF3jKkq4S97MygBcCAktRdsXmV";
-    $accesstoken="3307187923-btDaVeWIYXaCLQNK4OPm676DYchNoAC2SrLn2Nj";
-    $accesssecret="oAqXEc1dh5db0GRnMD7AHxYKTSxUtwbmjBPoUPxze9MAO";
-
-    $connection = new TwitterOAuth($apikey, $apisecret, $accesstoken, $accesssecret);
-
-    $tweets=    $connection->get("statuses/user_timeline", array("screen_name" => "jtwgus", "count" => "2")); 
-
-    echo ("$tweets");
-
-?>
                             </a>
                         </li>
                         <li class="doors-calendar-bloc">
