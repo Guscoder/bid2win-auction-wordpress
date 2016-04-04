@@ -1,11 +1,26 @@
 <?php get_header(); ?>
 
- <section class="main-container">
+            <section class="main-container">
                 <div class="main clearfix">
+
+                </div><!-- #main -->
+                <div class="main-2">
+                    <img class="main-logo" src="<?php bloginfo('template_directory'); ?>/img/logo4.png" alt="logo"/>
+                    <p class="main-header1">Integrity</p>
+                    <p class="main-header2">Professionalism</p>
+                    <p class="main-header3">Live Auctions</p>
+<!--  width="250" height="35"  -->
+
+                </div><!-- #main -->
+                <div class="main-3">
+
+                </div><!-- #main -->
+              <!--   <div class="main clearfix">
                     <p class="main-header1">Integrity</p>
                     <p class="main-header2">Professionalism</p>
                     <p class="main-header3">Live Auctions</p>
                 </div> <!-- #main -->
+
                 <p>BID2WIN Storage Auctions sets the standard for Quality and Professionalism in the greater Milwaukee, Chicagoland, and Northern Indiana areas.</p>
             </section> <!-- #main-container -->
 
