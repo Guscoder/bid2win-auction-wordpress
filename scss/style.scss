@@ -310,50 +310,56 @@ nav li{
 }
 
 .main {
-    margin-left: .9%;
-    height: 15em;
-    width: 32.5%;
-    display: inline-block;
-    background: #eee;
-    background-image: url('img/main-storage-left.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: none;
    @media screen and (min-width: 40em) {
       height: 30em;
-
+      width: 33%;
+      display: inline-block;
+      background-image: url('img/main-storage-left.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 }
 
 .main-2 {
-    height: 15em;
-    width: 32.5%;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid #fff;
+    text-align: center;
+    border-top: 1px solid #fff;
     .main-logo{
-      width: 95%;
+      width: 75%;
       height: auto;
-      margin: 1em .5em 0;
-    }
-    h2{
-
+      margin: 2em auto;
     }
    @media screen and (min-width: 40em) {
       height: 30em;
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #fff;
+      .main-logo{
+        width: 95%;
+        height: auto;
+        margin: 1em 0;
+      }
     }
 }
 
 .main-3 {
     height: 15em;
-    width: 32.5%;
-    display: inline-block;
-    background-image: url('img/main-storage-right.jpg');
+    width: 100%;
+    background: #eee;
+    background-image: url('img/storage_units_small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
    @media screen and (min-width: 40em) {
       height: 30em;
+      width: 33%;
+      display: inline-block;
+      background-image: url('img/main-storage-right.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 }
 
@@ -366,11 +372,10 @@ nav li{
   line-height: 1em;
   font-weight: 600;
   text-shadow: 1px 1px 1px $ltgreen;
-
+  font-size: 1.5em;
 }
 
 .main-header1{
-  font-size: 1.2em;
   @media screen and (min-width: 40em) {
     font-size: 2.2em;
     padding-top: 1.1em;
@@ -378,14 +383,12 @@ nav li{
 }
 
 .main-header2{
-  font-size: 1.2em;
   @media screen and (min-width: 40em) {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 
 .main-header3{
-  font-size: 1.5em;
   @media screen and (min-width: 40em) {
     font-size: 2.2em;
   }
