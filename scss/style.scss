@@ -313,7 +313,7 @@ nav li{
   display: none;
    @media screen and (min-width: 40em) {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       background-image: url('img/main-storage-left.jpg');
       background-size: cover;
@@ -332,14 +332,14 @@ nav li{
     }
    @media screen and (min-width: 40em) {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       vertical-align: top;
       border: 1px solid #fff;
       .main-logo{
         width: 95%;
         height: auto;
-        margin: 1em 0;
+        margin: 1em 0 0 0;
       }
     }
 }
@@ -354,7 +354,7 @@ nav li{
     background-position: center;
    @media screen and (min-width: 40em) {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       background-image: url('img/main-storage-right.jpg');
       background-size: cover;
@@ -367,18 +367,21 @@ nav li{
 .main-header2,
 .main-header3{
   text-align: center;
-  padding-bottom: .6em;
+  padding-bottom: .4em;
   color: #fff;
   line-height: 1em;
   font-weight: 600;
   text-shadow: 1px 1px 1px $ltgreen;
-  font-size: 1.5em;
+  font-size: 2em;
+
 }
 
 .main-header1{
   @media screen and (min-width: 40em) {
     font-size: 2.2em;
-    padding-top: 1.1em;
+  }
+    @media screen and (min-width: 40em) and (max-width: 48em){
+    font-size: 2em;
   }
 }
 
@@ -386,11 +389,17 @@ nav li{
   @media screen and (min-width: 40em) {
     font-size: 2em;
   }
+    @media screen and (min-width: 40em) and (max-width: 48em){
+    font-size: 1.6em;
+  }
 }
 
 .main-header3{
   @media screen and (min-width: 40em) {
     font-size: 2.2em;
+  }
+    @media screen and (min-width: 40em) and (max-width: 48em){
+    font-size: 2em;
   }
 }
 
@@ -497,7 +506,7 @@ footer{
     list-style-type: none;
     text-align: center;
     color: #fff;          
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 300;
     @media screen and (min-width: 40em) {
         }
@@ -509,7 +518,7 @@ footer{
         @media screen and (max-width: 560px) {
           display: block;
           text-align: center;
-          font-size: 1.5rem
+          font-size: 1em
         }
       }
     }
@@ -624,13 +633,19 @@ footer{
     width: 10%;
     @media screen and (max-width: 768px) {
     width: 25%;
-  }
+    }
+    @media screen and (max-width: 635px){
+      width: 0%;
+    }
 }
 
 
 .storage-image img{
   max-width: 100%;
   height: auto;
+      @media screen and (max-width: 635px){
+      display: none;
+    }
 }
 
 
@@ -697,6 +712,9 @@ footer{
     display: block;
     width: 75%;
     font-size: 1.5rem;
+  }
+  @media screen and (max-width: 635px) {
+    width: 100%;
   }
   @media screen and (max-width: 559px) {
   }
@@ -808,6 +826,9 @@ footer{
     margin-top: -1.7rem;
     margin-bottom: 2rem;
     font-size: 1.3rem;
+    ul{
+      padding-left: 0;
+    }
   }
 }
 
@@ -951,6 +972,9 @@ footer{
   }
 }
 
+.single-event-time{
+  color: #FF0000;
+}
 
 
 /* ==========================================================================
@@ -1054,4 +1078,8 @@ font-weight: 700;
 .category-route-order{
   margin-top: .8rem;
   font-weight: 700;
+}
+
+.category-time-order{
+  color: #FF0000;
 }

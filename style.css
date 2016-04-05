@@ -287,7 +287,7 @@ nav li {
     /* line 312, scss/style.scss */
     .main {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       background-image: url("img/main-storage-left.jpg");
       background-size: cover;
@@ -307,7 +307,7 @@ nav li {
     /* line 325, scss/style.scss */
     .main-2 {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       vertical-align: top;
       border: 1px solid #fff; }
@@ -315,7 +315,7 @@ nav li {
       .main-2 .main-logo {
         width: 95%;
         height: auto;
-        margin: 1em 0; } }
+        margin: 1em 0 0 0; } }
 
 /* line 347, scss/style.scss */
 .main-3 {
@@ -330,7 +330,7 @@ nav li {
     /* line 347, scss/style.scss */
     .main-3 {
       height: 30em;
-      width: 33%;
+      width: 32.8%;
       display: inline-block;
       background-image: url("img/main-storage-right.jpg");
       background-size: cover;
@@ -342,50 +342,61 @@ nav li {
 .main-header2,
 .main-header3 {
   text-align: center;
-  padding-bottom: .6em;
+  padding-bottom: .4em;
   color: #fff;
   line-height: 1em;
   font-weight: 600;
   text-shadow: 1px 1px 1px #3dff6d;
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 @media screen and (min-width: 40em) {
-  /* line 378, scss/style.scss */
+  /* line 379, scss/style.scss */
   .main-header1 {
-    font-size: 2.2em;
-    padding-top: 1.1em; } }
-
-@media screen and (min-width: 40em) {
-  /* line 385, scss/style.scss */
-  .main-header2 {
+    font-size: 2.2em; } }
+@media screen and (min-width: 40em) and (max-width: 48em) {
+  /* line 379, scss/style.scss */
+  .main-header1 {
     font-size: 2em; } }
 
 @media screen and (min-width: 40em) {
-  /* line 391, scss/style.scss */
+  /* line 388, scss/style.scss */
+  .main-header2 {
+    font-size: 2em; } }
+@media screen and (min-width: 40em) and (max-width: 48em) {
+  /* line 388, scss/style.scss */
+  .main-header2 {
+    font-size: 1.6em; } }
+
+@media screen and (min-width: 40em) {
+  /* line 397, scss/style.scss */
   .main-header3 {
     font-size: 2.2em; } }
+@media screen and (min-width: 40em) and (max-width: 48em) {
+  /* line 397, scss/style.scss */
+  .main-header3 {
+    font-size: 2em; } }
 
 /* ==============
     Doors Section
    ============== */
-/* line 403, scss/style.scss */
+/* line 412, scss/style.scss */
 .doors-container {
   padding: .5em 0;
   background: #000; }
   @media screen and (min-width: 40em) {
-    /* line 403, scss/style.scss */
+    /* line 412, scss/style.scss */
     .doors-container {
       padding: 2em 0 0; } }
-  /* line 409, scss/style.scss */
+  /* line 418, scss/style.scss */
   .doors-container ul {
     margin: 0;
     padding: 0 5%;
     list-style-type: none; }
     @media screen and (min-width: 40em) {
-      /* line 409, scss/style.scss */
+      /* line 418, scss/style.scss */
       .doors-container ul {
         padding: 0; } }
-    /* line 416, scss/style.scss */
+    /* line 425, scss/style.scss */
     .doors-container ul li {
       width: 100%;
       height: 15em;
@@ -393,13 +404,13 @@ nav li {
       padding: 0;
       text-align: center;
       border-radius: 10px; }
-      /* line 423, scss/style.scss */
+      /* line 432, scss/style.scss */
       .doors-container ul li a {
         display: block;
         height: 100%;
         padding-top: 6em;
         text-decoration: none; }
-        /* line 428, scss/style.scss */
+        /* line 437, scss/style.scss */
         .doors-container ul li a h1 {
           padding: 0;
           margin: 0;
@@ -407,42 +418,42 @@ nav li {
           font-size: 1.5em;
           font-weight: bold;
           text-shadow: 0.1em 0.1em 0.1em #000; }
-        /* line 436, scss/style.scss */
+        /* line 445, scss/style.scss */
         .doors-container ul li a h1:hover {
           color: #2bb24c; }
-      /* line 440, scss/style.scss */
+      /* line 449, scss/style.scss */
       .doors-container ul li p {
         color: #fff;
         margin: 0;
         padding: 0; }
       @media screen and (min-width: 40em) {
-        /* line 416, scss/style.scss */
+        /* line 425, scss/style.scss */
         .doors-container ul li {
           display: inline-block;
           width: 45%;
           margin: 0 2% 3em 2%; } }
       @media screen and (min-width: 60em) {
-        /* line 416, scss/style.scss */
+        /* line 425, scss/style.scss */
         .doors-container ul li {
           width: 22.5%;
           margin: 0 1% 2em 1%; } }
 
-/* line 460, scss/style.scss */
+/* line 469, scss/style.scss */
 .doors-nextauction-bloc {
   background: url("img/Doors/BlueDoor.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 466, scss/style.scss */
+/* line 475, scss/style.scss */
 .doors-auctions-bloc {
   background: url("img/Doors/OrangeDoor2.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 471, scss/style.scss */
+/* line 480, scss/style.scss */
 .doors-calendar-bloc {
   background: url("img/Doors/RedDoor.jpg") right no-repeat;
   background-size: cover; }
 
-/* line 476, scss/style.scss */
+/* line 485, scss/style.scss */
 .doors-rules-bloc {
   background: url("img/Doors/GreenDoor.jpg") right no-repeat;
   background-size: cover; }
@@ -450,7 +461,7 @@ nav li {
 /* ==============
     FOOTER Section
    ============== */
-/* line 486, scss/style.scss */
+/* line 495, scss/style.scss */
 footer {
   width: 100%;
   max-width: 1200px;
@@ -458,191 +469,199 @@ footer {
   padding: .7rem 0;
   margin: 0;
   background: #000; }
-  /* line 494, scss/style.scss */
+  /* line 503, scss/style.scss */
   footer ul {
     padding: 0;
     margin: 0 auto;
     list-style-type: none;
     text-align: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 300; }
-    /* line 504, scss/style.scss */
+    /* line 513, scss/style.scss */
     footer ul li {
       display: inline-block;
       margin: 0;
       padding: 0 1.5rem;
       letter-spacing: 1.5px; }
       @media screen and (max-width: 560px) {
-        /* line 504, scss/style.scss */
+        /* line 513, scss/style.scss */
         footer ul li {
           display: block;
           text-align: center;
-          font-size: 1.5rem; } }
+          font-size: 1em; } }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 525, scss/style.scss */
+/* line 534, scss/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 530, scss/style.scss */
+/* line 539, scss/style.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 534, scss/style.scss */
+/* line 543, scss/style.scss */
 .clearfix {
   *zoom: 1; }
 
-/* line 538, scss/style.scss */
+/* line 547, scss/style.scss */
 .active > a {
   color: #3dff6d; }
 
 /* ==========================================================================
    Auction Page
    ========================================================================== */
-/* line 547, scss/style.scss */
+/* line 556, scss/style.scss */
 .auction-container {
   width: 960px;
   margin: 2rem auto;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1035px) {
-    /* line 547, scss/style.scss */
+    /* line 556, scss/style.scss */
     .auction-container {
       width: 95%; } }
-  /* line 555, scss/style.scss */
+  /* line 564, scss/style.scss */
   .auction-container h1 {
     padding: 2rem 0 0 1rem;
     color: #2bb24c;
     font-size: 2.1em;
     font-weight: 700;
     text-align: center; }
-  /* line 562, scss/style.scss */
+  /* line 571, scss/style.scss */
   .auction-container p {
     text-align: center;
     font-size: 1rem; }
 
-/* line 568, scss/style.scss */
+/* line 577, scss/style.scss */
 .auctions {
   margin: 0 auto;
   padding: .5em; }
 
-/* line 574, scss/style.scss */
+/* line 583, scss/style.scss */
 .auction-listing {
   width: 100%;
   table-layout: fixed;
   margin: 1em 0;
   border: 2px solid #2bb24c; }
   @media screen and (max-width: 768px) {
-    /* line 574, scss/style.scss */
+    /* line 583, scss/style.scss */
     .auction-listing {
       width: 90%;
       text-align: center;
       margin: 1em auto;
       padding: 0; } }
-  /* line 585, scss/style.scss */
+  /* line 594, scss/style.scss */
   .auction-listing th {
     padding: 3px;
     background: #2bb24c;
     color: ivory;
     text-shadow: 2px 2px 2px black; }
-  /* line 591, scss/style.scss */
+  /* line 600, scss/style.scss */
   .auction-listing td {
     padding: 6px; }
-  /* line 594, scss/style.scss */
+  /* line 603, scss/style.scss */
   .auction-listing .time time {
     display: none; }
-  /* line 598, scss/style.scss */
+  /* line 607, scss/style.scss */
   .auction-listing .auction-item {
     background: gainsboro;
     z-index: 10; }
 
-/* line 604, scss/style.scss */
+/* line 613, scss/style.scss */
 .auction-list-headings {
   border: none; }
 
-/* line 608, scss/style.scss */
+/* line 617, scss/style.scss */
 .auction-headings {
   font-size: 1.3rem;
   border: 1px solid black;
   margin-bottom: 1rem; }
   @media screen and (max-width: 768px) {
-    /* line 608, scss/style.scss */
+    /* line 617, scss/style.scss */
     .auction-headings {
       display: none; } }
 
-/* line 618, scss/style.scss */
+/* line 627, scss/style.scss */
 .auction-headings-company {
   width: 30%;
   text-align: center; }
 
-/* line 623, scss/style.scss */
+/* line 632, scss/style.scss */
 .storage-image {
   width: 10%; }
   @media screen and (max-width: 768px) {
-    /* line 623, scss/style.scss */
+    /* line 632, scss/style.scss */
     .storage-image {
       width: 25%; } }
+  @media screen and (max-width: 635px) {
+    /* line 632, scss/style.scss */
+    .storage-image {
+      width: 0%; } }
 
-/* line 631, scss/style.scss */
+/* line 643, scss/style.scss */
 .storage-image img {
   max-width: 100%;
   height: auto; }
+  @media screen and (max-width: 635px) {
+    /* line 643, scss/style.scss */
+    .storage-image img {
+      display: none; } }
 
-/* line 637, scss/style.scss */
+/* line 652, scss/style.scss */
 .company-name {
   width: 20%; }
-  /* line 639, scss/style.scss */
+  /* line 654, scss/style.scss */
   .company-name h2 a {
     color: #2bb24c;
     text-decoration: none;
     font-size: 1.5rem; }
-  /* line 644, scss/style.scss */
+  /* line 659, scss/style.scss */
   .company-name h2 a:hover {
     text-decoration: none;
     color: #3fd163; }
 
-/* line 651, scss/style.scss */
+/* line 666, scss/style.scss */
 .auction-headings-location,
 .address {
   width: 25%;
   text-align: center; }
 
-/* line 657, scss/style.scss */
+/* line 672, scss/style.scss */
 .auction-headings-city,
 .city-state {
   width: 15%;
   text-align: center; }
 
-/* line 663, scss/style.scss */
+/* line 678, scss/style.scss */
 .auction-headings-date,
 .date {
   width: 10%;
   text-align: center; }
 
-/* line 669, scss/style.scss */
+/* line 684, scss/style.scss */
 .auction-headings-time,
 .time {
   width: 13%;
   text-align: center; }
-  /* line 672, scss/style.scss */
+  /* line 687, scss/style.scss */
   .auction-headings-time p,
   .time p {
     text-align: center;
     margin: 0 auto;
     padding: 0; }
 
-/* line 680, scss/style.scss */
+/* line 695, scss/style.scss */
 .auction-headings-units,
 .units {
   width: 7%;
   text-align: center; }
 
-/* line 691, scss/style.scss */
+/* line 706, scss/style.scss */
 .company-name,
 .address,
 .city-state,
@@ -655,7 +674,7 @@ footer {
       font-size: 1.2rem;
     }*/ }
   @media screen and (max-width: 768px) {
-    /* line 691, scss/style.scss */
+    /* line 706, scss/style.scss */
     .company-name,
     .address,
     .city-state,
@@ -666,8 +685,18 @@ footer {
       display: block;
       width: 75%;
       font-size: 1.5rem; } }
+  @media screen and (max-width: 635px) {
+    /* line 706, scss/style.scss */
+    .company-name,
+    .address,
+    .city-state,
+    .date,
+    .time,
+    .time p,
+    .units {
+      width: 100%; } }
   @media screen and (max-width: 440px) {
-    /* line 691, scss/style.scss */
+    /* line 706, scss/style.scss */
     .company-name,
     .address,
     .city-state,
@@ -678,44 +707,44 @@ footer {
       width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  /* line 708, scss/style.scss */
+  /* line 726, scss/style.scss */
   .units:after {
     content: "units"; } }
 
 @media screen and (max-width: 768px) {
-  /* line 714, scss/style.scss */
+  /* line 732, scss/style.scss */
   .time:before {
     content: "Time/Route Order:"; } }
 
-/* line 721, scss/style.scss */
+/* line 739, scss/style.scss */
 .company-name h2 {
   margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 2rem; }
   @media screen and (max-width: 939px) {
-    /* line 721, scss/style.scss */
+    /* line 739, scss/style.scss */
     .company-name h2 {
       font-size: 1.3rem; } }
   @media screen and (max-width: 768px) {
-    /* line 721, scss/style.scss */
+    /* line 739, scss/style.scss */
     .company-name h2 {
       font-size: 2.2rem; } }
 
 /* ==========================================================================
    Calendar Page
    ========================================================================== */
-/* line 743, scss/style.scss */
+/* line 761, scss/style.scss */
 .calendar-container {
   width: 960px;
   margin: 2rem auto;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1000px) {
-    /* line 743, scss/style.scss */
+    /* line 761, scss/style.scss */
     .calendar-container {
       width: 90%; } }
-  /* line 751, scss/style.scss */
+  /* line 769, scss/style.scss */
   .calendar-container h1 {
     padding: 1em 0;
     color: #2bb24c;
@@ -723,70 +752,73 @@ footer {
     font-weight: 700;
     text-align: center; }
 
-/* line 760, scss/style.scss */
+/* line 778, scss/style.scss */
 .fc-event-time, .fc-time {
   display: none !important; }
 
-/* line 764, scss/style.scss */
+/* line 782, scss/style.scss */
 .ui-tooltip-content {
   display: none; }
 
-/* line 768, scss/style.scss */
+/* line 786, scss/style.scss */
 .qtip-content {
   display: none !important; }
 
 /* ==========================================================================
    Rules Page
    ========================================================================== */
-/* line 776, scss/style.scss */
+/* line 794, scss/style.scss */
 .rules-container {
   width: 960px;
   margin: 2rem auto 0;
   background: ivory;
   padding: 0 0 4rem; }
   @media screen and (max-width: 1000px) {
-    /* line 776, scss/style.scss */
+    /* line 794, scss/style.scss */
     .rules-container {
       width: 90%; } }
-  /* line 784, scss/style.scss */
+  /* line 802, scss/style.scss */
   .rules-container h1 {
     padding: 2rem 0 0 1rem;
     color: #2bb24c;
     font-size: 2.2rem;
     font-weight: 700; }
-  /* line 790, scss/style.scss */
+  /* line 808, scss/style.scss */
   .rules-container p {
     padding: 0 2rem;
     font-size: 1.3rem; }
 
-/* line 796, scss/style.scss */
+/* line 814, scss/style.scss */
 #rules {
   padding: 2rem 2rem; }
-  /* line 799, scss/style.scss */
+  /* line 817, scss/style.scss */
   #rules h2 {
     font-family: 'Signika', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #2bb24c;
     margin-bottom: 1.7rem; }
-  /* line 806, scss/style.scss */
+  /* line 824, scss/style.scss */
   #rules article {
     font-family: 'Signika', sans-serif;
     margin-top: -1.7rem;
     margin-bottom: 2rem;
     font-size: 1.3rem; }
+    /* line 829, scss/style.scss */
+    #rules article ul {
+      padding-left: 0; }
 
 /* ==========================================================================
    About Page
    ========================================================================== */
-/* line 819, scss/style.scss */
+/* line 840, scss/style.scss */
 .about-container {
   background: gainsboro;
   overflow: auto;
   width: 90%;
   margin: 0 auto; }
 
-/* line 827, scss/style.scss */
+/* line 848, scss/style.scss */
 .mission-statement,
 .about {
   width: 40%;
@@ -799,18 +831,18 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 838, scss/style.scss */
+  /* line 859, scss/style.scss */
   .mission-statement h1,
   .about h1 {
     font-size: 2.3rem;
     color: #2bb24c;
     margin-bottom: 2rem; }
-  /* line 843, scss/style.scss */
+  /* line 864, scss/style.scss */
   .mission-statement p,
   .about p {
     font-size: 1.3rem; }
   @media screen and (max-width: 860px) {
-    /* line 827, scss/style.scss */
+    /* line 848, scss/style.scss */
     .mission-statement,
     .about {
       width: 90%;
@@ -818,22 +850,22 @@ footer {
       display: block;
       float: none; } }
 
-/* line 855, scss/style.scss */
+/* line 876, scss/style.scss */
 .about p {
   font-size: 1.1rem; }
   @media screen and (max-width: 1100px) {
-    /* line 857, scss/style.scss */
+    /* line 878, scss/style.scss */
     .about p a {
       font-size: 1rem; } }
   @media screen and (max-width: 600px) {
-    /* line 857, scss/style.scss */
+    /* line 878, scss/style.scss */
     .about p a {
       font-size: .8rem; } }
 
 /* ==========================================================================
    Single Event Page
    ========================================================================== */
-/* line 872, scss/style.scss */
+/* line 893, scss/style.scss */
 .event-container {
   background: gainsboro;
   overflow: auto;
@@ -841,39 +873,39 @@ footer {
   margin: 0 auto; }
 
 @media screen and (max-width: 650px) {
-  /* line 879, scss/style.scss */
+  /* line 900, scss/style.scss */
   .event-info {
     width: 100%;
     height: auto;
     display: block;
     float: none; } }
-/* line 886, scss/style.scss */
+/* line 907, scss/style.scss */
 .event-info ul {
   margin: 0 auto;
   padding: 0;
   list-style: none; }
-  /* line 890, scss/style.scss */
+  /* line 911, scss/style.scss */
   .event-info ul li {
     padding: .5rem;
     font-size: 1.3rem; }
-    /* line 893, scss/style.scss */
+    /* line 914, scss/style.scss */
     .event-info ul li a {
       color: #2bb24c;
       text-decoration: none; }
-    /* line 897, scss/style.scss */
+    /* line 918, scss/style.scss */
     .event-info ul li a:hover {
       color: darken #2bb24c, 20% !important; }
-/* line 903, scss/style.scss */
+/* line 924, scss/style.scss */
 .event-info h4 {
   font-weight: 600;
   font-size: 1.3rem; }
 
-/* line 909, scss/style.scss */
+/* line 930, scss/style.scss */
 #eo_venue_map-1 {
   height: 400px !important;
   width: 100%; }
 
-/* line 914, scss/style.scss */
+/* line 935, scss/style.scss */
 .event-detail-list {
   width: 90%;
   height: auto;
@@ -884,97 +916,101 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 924, scss/style.scss */
+  /* line 945, scss/style.scss */
   .event-detail-list h1 {
     font-size: 2.3rem;
     font-weight: 700;
     color: #2bb24c;
     margin-bottom: 2rem; }
   @media screen and (max-width: 768px) {
-    /* line 914, scss/style.scss */
+    /* line 935, scss/style.scss */
     .event-detail-list {
       width: 90%;
       height: auto;
       display: block;
       float: none; } }
 
-/* line 939, scss/style.scss */
+/* line 960, scss/style.scss */
 .event-list-rules-link {
   margin-bottom: 2rem; }
 
 @media (min-width: 650px) {
-  /* line 944, scss/style.scss */
+  /* line 965, scss/style.scss */
   body.single-event .eo-event-meta {
     width: 50% !important;
     float: left !important; }
 
-  /* line 948, scss/style.scss */
+  /* line 969, scss/style.scss */
   body.single-event .eo-event-venue-map {
     width: 50% !important;
     float: right !important; } }
+/* line 975, scss/style.scss */
+.single-event-time {
+  color: #FF0000; }
+
 /* ==========================================================================
    Category Page
    ========================================================================== */
-/* line 960, scss/style.scss */
+/* line 984, scss/style.scss */
 .category-container {
   background: gainsboro;
   overflow: auto;
   width: 90%;
   margin: 0 auto; }
-  /* line 965, scss/style.scss */
+  /* line 989, scss/style.scss */
   .category-container h2 a {
     color: #2bb24c !important; }
-  /* line 969, scss/style.scss */
+  /* line 993, scss/style.scss */
   .category-container h2 a:hover {
     text-decoration: none; }
-  /* line 973, scss/style.scss */
+  /* line 997, scss/style.scss */
   .category-container img {
     padding-left: 1rem; }
     @media screen and (max-width: 480px) {
-      /* line 973, scss/style.scss */
+      /* line 997, scss/style.scss */
       .category-container img {
         display: block !important;
         float: none !important;
         text-align: center;
         margin: 0 auto !important;
         padding: 0; } }
-  /* line 983, scss/style.scss */
+  /* line 1007, scss/style.scss */
   .category-container article {
     border: 2px #2bb24c solid;
     margin: 1rem 0; }
 
-/* line 989, scss/style.scss */
+/* line 1013, scss/style.scss */
 .category-info {
   color: #000;
   font-size: 1.3rem;
   font-weight: 600; }
-  /* line 993, scss/style.scss */
+  /* line 1017, scss/style.scss */
   .category-info .eo-event-meta {
     margin: 0 auto;
     padding: 0;
     list-style: none; }
-    /* line 997, scss/style.scss */
+    /* line 1021, scss/style.scss */
     .category-info .eo-event-meta li {
       padding: .5rem;
       font-size: 1.3rem;
       color: #000; }
-      /* line 1001, scss/style.scss */
+      /* line 1025, scss/style.scss */
       .category-info .eo-event-meta li a {
         color: #2bb24c;
         text-decoration: none; }
-      /* line 1005, scss/style.scss */
+      /* line 1029, scss/style.scss */
       .category-info .eo-event-meta li a:hover {
         color: darken #2bb24c, 20% !important; }
     @media screen and (max-width: 480px) {
-      /* line 993, scss/style.scss */
+      /* line 1017, scss/style.scss */
       .category-info .eo-event-meta {
         display: block;
         clear: both; } }
-  /* line 1014, scss/style.scss */
+  /* line 1038, scss/style.scss */
   .category-info h4 {
     font-weight: 600; }
 
-/* line 1019, scss/style.scss */
+/* line 1043, scss/style.scss */
 .category-detail-list {
   width: 90%;
   height: auto;
@@ -985,31 +1021,35 @@ footer {
   box-shadow: 10px 10px 10px #000;
   text-align: center;
   padding: 2rem 2rem; }
-  /* line 1029, scss/style.scss */
+  /* line 1053, scss/style.scss */
   .category-detail-list header {
     background: ivory; }
-  /* line 1032, scss/style.scss */
+  /* line 1056, scss/style.scss */
   .category-detail-list h1 {
     font-size: 2.3rem;
     font-weight: 700;
     color: #2bb24c;
     margin-bottom: 2rem; }
-  /* line 1038, scss/style.scss */
+  /* line 1062, scss/style.scss */
   .category-detail-list .category-info {
     text-align: center; }
   @media screen and (max-width: 768px) {
-    /* line 1019, scss/style.scss */
+    /* line 1043, scss/style.scss */
     .category-detail-list {
       width: 90%;
       height: auto;
       display: block;
       float: none; } }
 
-/* line 1050, scss/style.scss */
+/* line 1074, scss/style.scss */
 .category-date {
   font-weight: 700; }
 
-/* line 1054, scss/style.scss */
+/* line 1078, scss/style.scss */
 .category-route-order {
   margin-top: .8rem;
   font-weight: 700; }
+
+/* line 1083, scss/style.scss */
+.category-time-order {
+  color: #FF0000; }

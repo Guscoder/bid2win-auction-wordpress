@@ -83,7 +83,7 @@ get_header(); ?>
 						$microformat = 'c';
 					}?>
 					<time itemprop="startDate" datetime="<?php eo_the_start($microformat); ?>"><span class="category-date">Date: </span><?php eo_the_start($format); ?></time>
-					<p class="category-route-order">Time/Route Order: <?php the_field('first_auction_start_time' . ' '); the_field('route_order'); ?></p>
+					<p class="category-route-order">Time/Route Order: <span class="category-time-order"> <?php the_field('first_auction_start_time'); echo " "; the_field('route_order'); ?></span></p>
 					<!-- Display event meta list -->
 					<?php echo eo_get_event_meta_list(); ?>
 

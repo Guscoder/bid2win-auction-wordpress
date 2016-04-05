@@ -43,7 +43,7 @@
 		<?php if( !eo_reoccurs() ){ ?>
 				<!-- Single event -->
 				<li><strong><?php _e('Date', 'eventorganiser') ;?>:</strong> <?php eo_the_start($date_format); ?> </li>
-				<li><strong><?php _e('Time or Route Order', 'eventorganiser') ;?>:</strong> <?php the_field('first_auction_start_time'); the_field('route_order');?> </li>
+				<li><strong><?php _e('Time or Route Order', 'eventorganiser') ;?>:</strong> <span class="single-event-time"> <?php the_field('first_auction_start_time'); echo " "; the_field('route_order');?></span> </li>
 				<li><strong><?php _e('Address', 'eventorganiser') ;?>:</strong> <?php $address_details = eo_get_venue_address(); echo $address_details['address']; ?> </li>
 				<li><strong><?php _e('Location', 'eventorganiser') ;?>:</strong> <?php $address_details = eo_get_venue_address();	echo $address_details['city']. ', ' .$address_details['state']. '  '.$address_details['postcode']; ?> </li>
 				<li><strong><a href="<?php echo get_page_link( get_page_by_title( Rules )->ID ); ?>">Auction Rules</a></strong></li>

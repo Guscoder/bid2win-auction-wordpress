@@ -119,7 +119,7 @@ get_header(); ?>
                             <td class="time">
                             	<p class="cancelMe">
                             		<?php 
-                            			the_field('first_auction_start_time');
+                            			the_field('first_auction_start_time'); echo " ";
                             		?>
                             	</p>
 
