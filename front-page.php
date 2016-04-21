@@ -27,8 +27,8 @@
             <section class="doors-container">
                     <ul class="doors-list">
                         <li class="doors-nextauction-bloc">
-                            <a href="">
-                                <h1>Next Auction:</h1>   
+                            <a href="<?php echo get_page_link( get_page_by_title( about )->ID ); ?>">
+                                <h1>Our Services</h1>   
                             </a>
                         </li>
                         <li class="doors-auctions-bloc">

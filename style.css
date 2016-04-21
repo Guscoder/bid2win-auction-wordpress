@@ -860,7 +860,7 @@ footer {
   @media screen and (max-width: 600px) {
     /* line 878, scss/style.scss */
     .about p a {
-      font-size: .8rem; } }
+      font-size: .8em; } }
 
 /* ==========================================================================
    Single Event Page
@@ -966,7 +966,7 @@ footer {
   /* line 997, scss/style.scss */
   .category-container img {
     padding-left: 1rem; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 640px) {
       /* line 997, scss/style.scss */
       .category-container img {
         display: block !important;
@@ -1052,4 +1052,110 @@ footer {
 
 /* line 1083, scss/style.scss */
 .category-time-order {
+  color: #FF0000; }
+
+/* ==========================================================================
+   Tag Page
+   ========================================================================== */
+/* line 1093, scss/style.scss */
+.tag-container {
+  background: gainsboro;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto; }
+  /* line 1098, scss/style.scss */
+  .tag-container h2 a {
+    color: #2bb24c !important; }
+  /* line 1102, scss/style.scss */
+  .tag-container h2 a:hover {
+    text-decoration: none; }
+  /* line 1106, scss/style.scss */
+  .tag-container img {
+    padding-left: 1rem; }
+    @media screen and (max-width: 640px) {
+      /* line 1106, scss/style.scss */
+      .tag-container img {
+        display: block !important;
+        float: none !important;
+        text-align: center;
+        margin: 0 auto !important;
+        padding: 0; } }
+  /* line 1116, scss/style.scss */
+  .tag-container article {
+    border: 2px #2bb24c solid;
+    margin: 1rem 0; }
+
+/* line 1122, scss/style.scss */
+.tag-info {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600; }
+  /* line 1126, scss/style.scss */
+  .tag-info .eo-event-meta {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    /* line 1130, scss/style.scss */
+    .tag-info .eo-event-meta li {
+      padding: .5rem;
+      font-size: 1.3rem;
+      color: #000; }
+      /* line 1134, scss/style.scss */
+      .tag-info .eo-event-meta li a {
+        color: #2bb24c;
+        text-decoration: none; }
+      /* line 1138, scss/style.scss */
+      .tag-info .eo-event-meta li a:hover {
+        color: darken #2bb24c, 20% !important; }
+    @media screen and (max-width: 480px) {
+      /* line 1126, scss/style.scss */
+      .tag-info .eo-event-meta {
+        display: block;
+        clear: both; } }
+  /* line 1147, scss/style.scss */
+  .tag-info h4 {
+    font-weight: 600; }
+
+/* line 1152, scss/style.scss */
+.tag-detail-list {
+  width: 90%;
+  height: auto;
+  margin: 4.5%;
+  background-color: ivory;
+  border: 1px solid #2bb24c;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 2rem 2rem; }
+  /* line 1162, scss/style.scss */
+  .tag-detail-list header {
+    background: ivory; }
+  /* line 1165, scss/style.scss */
+  .tag-detail-list h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #2bb24c;
+    margin-bottom: 2rem; }
+  /* line 1171, scss/style.scss */
+  .tag-detail-list .tag-info {
+    text-align: center; }
+  @media screen and (max-width: 768px) {
+    /* line 1152, scss/style.scss */
+    .tag-detail-list {
+      width: 90%;
+      height: auto;
+      display: block;
+      float: none; } }
+
+/* line 1183, scss/style.scss */
+.tag-date {
+  font-weight: 700; }
+
+/* line 1187, scss/style.scss */
+.tag-route-order {
+  margin-top: .8rem;
+  font-weight: 700; }
+
+/* line 1192, scss/style.scss */
+.tag-time-order {
   color: #FF0000; }

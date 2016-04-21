@@ -19,6 +19,10 @@
 //Call the template header
 get_header(); ?>
 
+<section class="tag-container">
+
+    <div class="tag-detail-list">
+
 		<!-- This template follows the TwentyTwelve theme-->
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
@@ -56,7 +60,7 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 
-				<h1 class="entry-title" style="display: inline;">
+				<h2>
 				<a href="<?php the_permalink(); ?>">
 					<?php 
 						//If it has one, display the thumbnail
@@ -67,23 +71,23 @@ get_header(); ?>
 						the_title()
 					;?>
 				</a>
-				</h1>
+				</h2>
 		
-				<div class="event-entry-meta">
+				<div class="tag-info">
 
 					<!-- Output the date of the occurrence-->
 					<?php
 					//Format date/time according to whether its an all day event.
 					//Use microdata https://support.google.com/webmasters/bin/answer.py?hl=en&answer=176035
  					if( eo_is_all_day() ){
-						$format = 'd F Y';
+						$format = 'F d, Y  ';
 						$microformat = 'Y-m-d';
 					}else{
-						$format = 'd F Y '.get_option('time_format');
+						$format = 'F d, Y  ';
 						$microformat = 'c';
 					}?>
-					<time itemprop="startDate" datetime="<?php eo_the_start($microformat); ?>"><?php eo_the_start($format); ?></time>
-
+					<time itemprop="startDate" datetime="<?php eo_the_start($microformat); ?>"><span class="tag-date">Date: </span><?php eo_the_start($format); ?></time>
+					<p class="tag-route-order">Time/Route Order: <span class="tag-time-order"> <?php the_field('first_auction_start_time'); echo " "; the_field('route_order'); ?></span></p>
 					<!-- Display event meta list -->
 					<?php echo eo_get_event_meta_list(); ?>
 
@@ -124,8 +128,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
-		</div><!-- #primary -->
+		</section><!-- #primary -->
 
 <!-- Call template sidebar and footer -->
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

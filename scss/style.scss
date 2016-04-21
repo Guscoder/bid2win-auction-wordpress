@@ -875,15 +875,15 @@ footer{
 .about{
   p {
     font-size: 1.1rem;
-  a{
-    @media screen and (max-width: 1100px) {
-    font-size: 1rem;
+    a{
+      @media screen and (max-width: 1100px) {
+      font-size: 1rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: .8em;
+        }
+    }
   }
-  @media screen and (max-width: 600px) {
-    font-size: .8rem;
-  }
- }
-}
 }
 
 /* ==========================================================================
@@ -996,7 +996,7 @@ footer{
 
   img{
     padding-left: 1rem;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 640px){
     display: block !important;
     float: none !important;
     text-align: center;
@@ -1081,5 +1081,114 @@ font-weight: 700;
 }
 
 .category-time-order{
+  color: #FF0000;
+}
+
+
+
+/* ==========================================================================
+   Tag Page
+   ========================================================================== */
+
+.tag-container{
+  background: $grey;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  h2 a{
+    color: $dkgreen !important;
+  }
+
+  h2 a:hover{
+    text-decoration: none;
+  }
+
+  img{
+    padding-left: 1rem;
+    @media screen and (max-width: 640px){
+    display: block !important;
+    float: none !important;
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 0;
+    }  
+  }
+  article{
+    border: 2px $dkgreen solid;
+    margin: 1rem 0;
+  }
+}
+
+.tag-info{
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+  .eo-event-meta{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    li{
+      padding: .5rem;
+      font-size: 1.3rem;
+      color: #000;
+      a{
+        color: $dkgreen;
+        text-decoration: none;
+      }
+      a:hover{
+        color: darken ($dkgreen, 20%) !important;
+      }
+    }
+  @media screen and (max-width: 480px){
+    display: block;
+    clear: both;
+  }  
+}
+  h4{
+    font-weight: 600;
+  }
+}
+
+.tag-detail-list{
+  width: 90%;
+  height: auto;
+  margin: 4.5%;
+  background-color: $white;
+  border: 1px solid $dkgreen;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  text-align: center;
+  padding: 2rem 2rem;
+  header{
+    background: $white;
+  }
+  h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: $dkgreen;
+    margin-bottom: 2rem; 
+  }
+  .tag-info{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+  }
+}
+
+.tag-date {
+font-weight: 700;
+}
+
+.tag-route-order{
+  margin-top: .8rem;
+  font-weight: 700;
+}
+
+.tag-time-order{
   color: #FF0000;
 }
